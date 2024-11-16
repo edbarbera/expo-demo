@@ -1,6 +1,6 @@
-# Welcome to your Expo app 👋
+# Welcome to the Gyroscope Demo App 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is an [Expo](https://expo.dev) project created to demonstrate the fun features of Expo, specifically using the gyroscope sensor to move a ball on the screen.
 
 ## Get started
 
@@ -25,26 +25,17 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## About the Gyroscope Demo
 
-When you're ready, run:
+This app features a GyroscopeDemo component that uses the device's gyroscope to move a ball around the screen. The ball's movement is constrained within the screen dimensions, and haptic feedback is provided when the ball hits the edges of the screen.
 
-```bash
-npm run reset-project
-```
+### Key Features
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- Gyroscope Integration: Uses the `expo-sensors` package to read gyroscope data.
+- Smooth Animations: Utilizes `react-native-reanimated` for smooth animations.
+- Haptic Feedback: Provides haptic feedback using the `expo-haptics` package when the ball hits the screen edges.
+- Landscape Orientation: The app is designed to be used in landscape mode.
 
-## Learn more
+### Code Overview
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+The main component is `GyroscopeDemo.tsx`, which handles the gyroscope data and animates the ball's movement. Here's a brief overview of the code:
